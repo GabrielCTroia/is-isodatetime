@@ -28,7 +28,7 @@ isValidISODateTime(now); // '2022-09-14T10:22:30.370Z'
 
 ```
 
-### With (Zod)[https://github.com/colinhacks/zod]
+### With [Zod](https://github.com/colinhacks/zod)
 
 ```
 import { z } from "zod";
@@ -41,7 +41,7 @@ export const isoDatetimeToDate = z
 ```
 
 
-### With (io-ts)[https://github.com/gcanti/io-ts]
+### With [io-ts](https://github.com/gcanti/io-ts)
 
 ```
 import * as io from 'io-ts';
