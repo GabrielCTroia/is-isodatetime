@@ -1,5 +1,5 @@
 import { parseISO, isValid } from "date-fns";
-import { isValidISODateTime } from "./ISODateTime";
+import { ISODateTime, isValidISODateTime } from "./ISODateTime";
 
 // The ISO 8601 Date format
 //  See https://en.wikipedia.org/wiki/ISO_8601
@@ -31,7 +31,7 @@ export const isValidISODate = (s: string): s is ISODate =>
  *
  * @param date
  */
-export function toISODate(date: Date | string): ISODate {
+export function toISODate(date: Date | ISODateTime | string): ISODate {
   if (typeof date === "string") {
     if (isValidISODateTime(date)) {
       return date.slice(0, 10) as ISODate;
