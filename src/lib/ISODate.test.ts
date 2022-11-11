@@ -72,6 +72,10 @@ describe("ISO Date", () => {
         "2019-11-05"
       );
     });
+
+    test('works with ISODateTime string', () => {
+      expect(toISODate('2022-10-24T06:18:40.366Z')).toBe('2022-10-24');
+    });
   });
 });
 
