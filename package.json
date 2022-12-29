@@ -1,6 +1,6 @@
 {
   "name": "is-isodatetime",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A Type Validator for ISO Date & Datetime",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
